@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Chrome extension that searches POIZON back office from context menu",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && npm run copy-manifest",
+    "copy-manifest": "node scripts/copy-manifest.js"
   },
   "keywords": [
     "chrome-extension",

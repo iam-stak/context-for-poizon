@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "POIZON Back Office Context Search",
+  "version": "1.0.0",
+  "description": "右クリックメニューからPOIZONバックオフィスで選択テキストを検索します。",
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://seller.poizon.com/*"
+  ],
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  }
+}
